@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "dfc32c35-2525-4540-94b6-658f1003a5bf",
+		"name": "User API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "16102624-dfc32c35-2525-4540-94b6-658f1003a5bf"
+	},
+	"item": [
+		{
+			"name": "getuser",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1bbc2f2a-44b3-41bb-8eac-2e8d9f4bb964",
+						"exec": [
+							"pm.test(\"Validate user route\",()=>{\r",
+							"    const response = pm.response.json;\r",
+							"    console.log(response)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "cde70d38-282d-4868-91c3-e85ff10243bf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v.1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v.1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
